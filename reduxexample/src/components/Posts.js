@@ -4,8 +4,12 @@ import {fetchPosts} from "../actions/postActions"
 
  class Posts  extends Component
 {
+	componentWillMount()
+	{
+		this.props.fetchPosts();
+	}
 	render(){
-		const postItems = this.state.posts.map(post => (
+		const postItems = this.props.posts.map(post => (
 			<div key ={post.id}>
 			<h3>{post.title}</h3>
 			<p>{post.body}</p></div>))
@@ -18,6 +22,9 @@ import {fetchPosts} from "../actions/postActions"
 	}
 }
 
-export default connect(null, {fetchPosts})(Posts);
+const mapStateToProps = state =>({
+	posts: state.posts.items
+})
+export default connect(mapStateToProps, {fetchPosts})(Posts);
 
-//null: map state to props, 1st arg
+//null: map state to props, get the state from redu and map it to component's state
