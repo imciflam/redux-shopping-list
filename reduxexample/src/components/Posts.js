@@ -5,10 +5,18 @@ import {fetchPosts} from "../actions/postActions"
 
  class Posts  extends Component
 {
-	componentDidMount()
-	{
-		this.props.fetchPosts();
-	}
+	componentDidMount() {
+    this.props.fetchPosts();
+}
+
+
+shouldComponentUpdate(nextProps) {
+    if (nextProps.newPost) {
+        this.props.posts.unshift(nextProps.newPost)
+    }
+    return true;
+}
+
 	render(){
 		const postItems = this.props.posts.map(post => (
 			<div key ={post.id}>
@@ -25,12 +33,14 @@ import {fetchPosts} from "../actions/postActions"
 
 Posts.propTypes = {
 	fetchPosts: PropTypes.func.isRequired,
-	posts: PropTypes.array.isRequired
+	posts: PropTypes.array.isRequired,
+	newPost: PropTypes.object
 }
 
 const mapStateToProps = state =>({
-	posts: state.posts.items
+	posts: state.posts.items,
+	newPost: state.posts.item
 })
 export default connect(mapStateToProps, {fetchPosts})(Posts);
 
-//null: map state to props, get the state from redu and map it to component's state
+//map state to props, get the state from redu and map it to component's state

@@ -16,6 +16,11 @@ export default function(state=initialState, action)
 				items: action.payload
 			}
 		case NEW_POST:
+			return {
+				//return only one new item
+				...state,
+				item: action.payload //single post
+			}
 		default:
 				return state;
 	}
