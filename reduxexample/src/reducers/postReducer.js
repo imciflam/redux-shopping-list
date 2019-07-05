@@ -1,4 +1,4 @@
-//evaluation of all action going on here
+//evaluation of all actions going on here (type is mandatory bc of it)
 import {FETCH_POSTS, NEW_POST} from "../actions/types";
 
 const initialState = {
