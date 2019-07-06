@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/redux-shopping-list/static/css/main.441c33cf.chunk.css",
-    "main.js": "/redux-shopping-list/static/js/main.c264a9f8.chunk.js",
-    "main.js.map": "/redux-shopping-list/static/js/main.c264a9f8.chunk.js.map",
+    "main.css": "/redux-shopping-list/static/css/main.12050b42.chunk.css",
+    "main.js": "/redux-shopping-list/static/js/main.fdf7478c.chunk.js",
+    "main.js.map": "/redux-shopping-list/static/js/main.fdf7478c.chunk.js.map",
     "runtime~main.js": "/redux-shopping-list/static/js/runtime~main.986286e7.js",
     "runtime~main.js.map": "/redux-shopping-list/static/js/runtime~main.986286e7.js.map",
     "static/js/2.6e9c4761.chunk.js": "/redux-shopping-list/static/js/2.6e9c4761.chunk.js",
     "static/js/2.6e9c4761.chunk.js.map": "/redux-shopping-list/static/js/2.6e9c4761.chunk.js.map",
     "index.html": "/redux-shopping-list/index.html",
-    "precache-manifest.217b76233d58b2a37a945203c5e1496b.js": "/redux-shopping-list/precache-manifest.217b76233d58b2a37a945203c5e1496b.js",
+    "precache-manifest.c795da2229c79bf79d8f7fa8a57692eb.js": "/redux-shopping-list/precache-manifest.c795da2229c79bf79d8f7fa8a57692eb.js",
     "service-worker.js": "/redux-shopping-list/service-worker.js",
-    "static/css/main.441c33cf.chunk.css.map": "/redux-shopping-list/static/css/main.441c33cf.chunk.css.map",
-    "static/media/logo.svg": "/redux-shopping-list/static/media/logo.5d5d9eef.svg"
+    "static/css/main.12050b42.chunk.css.map": "/redux-shopping-list/static/css/main.12050b42.chunk.css.map",
+    "static/media/logo.svg": "/redux-shopping-list/static/media/logo.ee7cd8ed.svg"
   }
 }
