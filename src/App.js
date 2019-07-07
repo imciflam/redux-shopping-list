@@ -12,7 +12,6 @@ function App() {
       {/*holds the store - tree of an app*/}
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <PostForm />
           <Posts />
         </header>
